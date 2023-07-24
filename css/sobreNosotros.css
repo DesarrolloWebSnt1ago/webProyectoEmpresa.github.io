@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+
+}
+
+main {
+  margin-top: 150px;
+
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  background: #737373;
+  z-index: 1;
+  top: 0;
+}
+
+header a .logo {
+  width: 100px;
+  height: 100px;
+
+}
+
+header .nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+header .nav .nav-link {
+  padding: 20px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header .nav .nav-link:hover {
+  background-color: #FFA915;
+  border-radius: 10px;
+
+}
+
+.sec .sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec h2 {
+  display: flex;
+  align-self: start;
+  padding: 5px;
+  border: #FFA915 solid 1px;
+  margin: 10px;
+}
+
+.sec1 .titulo {
+  text-align: center;
+  border-bottom: #38B6FF solid 2px;
+}
+
+.sec1 .sub p {
+  margin: 20px;
+  text-align: center;
+  background-color: #93929244;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.6em;
+
+}
+
+.sec1 .sub p i {
+  width: 100%;
+}
+
+.sec1 .sub p i strong {
+  width: 100%;
+}
+
+.sec2 .sub {
+  border-bottom: 3px solid #93929244;
+}
+
+.sec2 .sub .contImg {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.sec2 .sub .contImg .img {
+  width: 10%;
+  height: 10%;
+
+}
+
+.sec2 .sub .contImg figcaption {
+  padding: 10px;
+  border-bottom: #38B6FF solid 2px;
+}
+
+
+.sec2 .sub .contImg h3 {
+  padding: 10px;
+
+}
+
+.sec3 .sub1 figure {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec3 .sub1 figure h3 {
+  display: flex;
+  align-self: start;
+  border: #FFA915 solid 1px;
+  padding: 10px;
+}
+
+.sec3 .sub1 figure img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #38B6FF;
+  height: 100px;
+}
+
+@media only screen and (max-width: 630px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    height: 150px;
+    margin: 0;
+
+  }
+
+  header .nav .nav-link {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  main {
+    margin-top: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    align-items: start;
+    height: 200px;
+
+  }
+
+  header .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main {
+    margin-top: 250px;
+  }
+}
